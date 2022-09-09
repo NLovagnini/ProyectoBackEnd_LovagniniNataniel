@@ -1,0 +1,29 @@
+{{#if products}}
+<h2>List of products</h2>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Price</th>
+        <th>Img</th>
+        <th>Action</th>
+    </tr>
+    {{#each products}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.title}}</td>
+        <td>{{this.price}}</td>
+        <td><img src="{{{this.thumbnail}}}" alt="" class="tableImg"></td>
+        <td><form action="/" method="DELETE">
+        <input type="submit" value="Delete" class="submitBtn">
+        </form>
+        <form action="/" method="PUT">
+        <input type="submit" value="Edit" class="submitBtn"></form></td>
+    </tr>
+    {{/each}}
+</table>
+{{/if}}
+
+{{!-- <form action="/" method="get">
+    <input type="submit" value="Go back to form" class="submitBtn">
+</form> --}}

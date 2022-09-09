@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/hbsStyle.css">
+    <title>Socket</title>
+</head>
+
+<body>
+    <h2>Submit a product</h2>
+
+    <form action="/productos" method="POST" enctype="multipart/form-data">
+        <label for="title" class="formLabel">Name of the product:</label>
+        <br>
+        <input type="text" id="title" name="title" class="textInput" required>
+        <br>
+        <label for="price" class="formLabel">Price of the product:</label>
+        <br>
+        <input type="number" id="price" name="price" class="textInput" step=".01" required>
+        <br>
+        <label for="thumbnail" class="formLabel">Upload an image for the product. (You can get it from <a
+                href="https://www.iconfinder.com/icons" target="_blank">here</a>)</label>
+        <br>
+        <input type="file" id="thumbnail" name="thumbnail" class="fileInput" required>
+        <br>
+        <input type="submit" class="submitBtn" value="Submit Product">
+    </form>
+
+
+
+    <div id="products"></div>
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+        integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
+        integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/showProds.js"></script>
+</body>
+
+</html>

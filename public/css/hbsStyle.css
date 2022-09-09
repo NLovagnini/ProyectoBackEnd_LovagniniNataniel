@@ -1,0 +1,86 @@
+body{
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table{
+    width: 50%;
+    text-align: center;
+    border: solid 2px black;
+    margin: 12px;
+}
+table td, table th {
+    border: 1px solid black;
+    padding: 12px;
+  }
+  table tr:first-child th {
+    border-top: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:first-child,
+  table tr th:first-child {
+    border-left: 0;
+  }
+  table tr td:last-child,
+  table tr th:last-child {
+    border-right: 0;
+  }
+
+h2{
+    padding: 12px;
+}
+
+.tableImg{
+    width: 4em;
+}
+
+.formLabel{
+  margin: 12px;
+}
+
+.thumbnailMsg{
+  margin: 0px 0px 8px 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.textInput{
+  margin: 6px 12px 8px 12px;
+  height: 2em;
+  width: 20%;
+  border: 1px solid #768d87;
+  border-radius: 5px;
+}
+
+.fileInput{
+  margin: 6px 12px 0px 12px;
+  height: 2em;
+  width: 30%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submitBtn {
+  box-shadow: 0px 0px 0px 0px #2c3b39;
+  margin: 12px;
+	background-color:#4c4e4e;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#d8d8d8;
+	font-family:Verdana;
+	font-size:16px;
+	padding:8px 20px;
+	text-decoration:none;
+}
+.submitBtn:active {
+	position:relative;
+	top:1px;
+}
